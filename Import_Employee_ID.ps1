@@ -8,8 +8,8 @@ The "EmployeeID" column should contain the corresponding employee ID from the HR
 #>
  
 Import-Module ActiveDirectory
-$Users = Import-Csv -Path c:\import_csv\empidimport.csv #Change this path to your .csv file
-Get-Content -Path c:\users\jeremy.armstrong\documents\imports\empidimport2.csv | ft
+$Users = Import-Csv -Path c:\import_csv\empidimport.csv # Change this path to your .csv file
+Get-Content -Path c:\import_csv\empidimport.csv | ft # Change this path to match the pass specified in the line above
 sleep 10
 foreach ($User in $Users)
 {
